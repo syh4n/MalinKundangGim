@@ -127,6 +127,7 @@ public class Stage2 : MonoBehaviour
 
         if (collision.gameObject.tag == "Saudagar")
         {
+            Debug.Log("saudagar");
             GetComponent<PlayerController>().SetIdle();
             Dialog("saudagar");
         }

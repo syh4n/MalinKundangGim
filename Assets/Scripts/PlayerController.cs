@@ -39,7 +39,6 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(moveInput);
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
 
@@ -110,8 +109,9 @@ public class PlayerController : MonoBehaviour
 
     public void SetIdle() 
     {
-
         moveInput = 0;
+        m_anim.SetBool("isWalking", false);
+        rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
     }
 
 
