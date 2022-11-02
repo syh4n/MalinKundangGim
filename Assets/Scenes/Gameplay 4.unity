@@ -999,6 +999,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7080992223800672906, guid: ea1097977166ae945989a8ec959b0f83, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.56414795
+      objectReference: {fileID: 0}
     - target: {fileID: 7080992224741778642, guid: ea1097977166ae945989a8ec959b0f83, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -1935,6 +1939,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   m_anim: {fileID: 0}
+  extraJump: 0
   extraJumpValue: 1
   isJumping: 0
 --- !u!114 &587816542
@@ -6146,8 +6151,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1476303292}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.79, y: -0.95, z: 10}
-  m_LocalScale: {x: 0.7051161, y: 0.70511603, z: 0.70511603}
+  m_LocalPosition: {x: 0.0387, y: -0.95, z: 10}
+  m_LocalScale: {x: 0.82864934, y: 0.70511603, z: 0.70511603}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2087899413}

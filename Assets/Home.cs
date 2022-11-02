@@ -7,6 +7,7 @@ public class Home : MonoBehaviour
 {
     // Start is called before the first frame update
     public Button[] allLevel;
+    public MusicManager mm;
 
     void Start()
     {
@@ -22,6 +23,8 @@ public class Home : MonoBehaviour
 
             }
         }
+        mm = FindObjectOfType<MusicManager>();
+        mm.PlayMusic(mm.mainMenu);
     }
 
     // Update is called once per frame

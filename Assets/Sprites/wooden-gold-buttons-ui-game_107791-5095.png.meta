@@ -292,11 +292,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 276
-        y: 40
+        y: 45
         width: 62
-        height: 75
+        height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -317,7 +317,7 @@ TextureImporter:
         width: 62
         height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -325,6 +325,48 @@ TextureImporter:
       bones: []
       spriteID: 32013dc8fc47bb048b1d66f1f4aed92f
       internalID: 1855459167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-gold-buttons-ui-game_107791-5095_9
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 141
+        width: 73
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaabaa1b152ef324fb69ac2119a9c949
+      internalID: 340006661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wooden-gold-buttons-ui-game_107791-5095_10
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 142
+        width: 65
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db34ee105697c9a408d664ef448b1369
+      internalID: 570380312
       vertices: []
       indices: 
       edges: []
@@ -345,9 +387,11 @@ TextureImporter:
       wooden-gold-buttons-ui-game_107791-5095_8: 1855459167
       wooden-gold-buttons-ui-game_107791-5095_5: -98236540
       wooden-gold-buttons-ui-game_107791-5095_0: 1412875114
+      wooden-gold-buttons-ui-game_107791-5095_9: 340006661
       wooden-gold-buttons-ui-game_107791-5095_1: 355623013
       wooden-gold-buttons-ui-game_107791-5095_6: -1315634144
       wooden-gold-buttons-ui-game_107791-5095_7: 1194033102
+      wooden-gold-buttons-ui-game_107791-5095_10: 570380312
       wooden-gold-buttons-ui-game_107791-5095_2: 1747519245
   spritePackingTag: 
   pSDRemoveMatte: 0

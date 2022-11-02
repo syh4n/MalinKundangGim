@@ -6,7 +6,23 @@ public class UIManager : MonoBehaviour
 {
     public GameObject panelPause;
     public GameObject panelWin;
+    public MusicManager mm;
+    public QuestManager qm;
     public int nextLevel;
+    public bool narrationOn;
+
+    private void Start()
+    {
+        mm = FindObjectOfType<MusicManager>();
+        qm = FindObjectOfType<QuestManager>();
+        if (!narrationOn)
+            StartMusic();
+    }
+
+    public void StartMusic()
+    {
+        mm.PlayMusic(mm.stage[qm.levelIndex]);
+    }
     public void ChangeScene(string sceneName)
     {
         Time.timeScale = 1;

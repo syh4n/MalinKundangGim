@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
 
     public Animator m_anim;
 
+    [SerializeField]
     private int extraJump;
     public int extraJumpValue;
 
@@ -33,16 +34,18 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         m_anim = GetComponent<Animator>();
+        extraJumpValue = 1;
         extraJump = extraJumpValue;
         rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
-
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
-
-        moveInput = Input.GetAxis("Horizontal");
+       
+#if UNITY_STANDALONE_WIN
+       // moveInput = Input.GetAxis("Horizontal");
+#endif
         //Debug.Log(moveInput);
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
 
@@ -64,21 +67,48 @@ public class PlayerController : MonoBehaviour
         {
             Flip();
         }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Jump();
+        }
+        DetectGround();
+       
+       
+       
 
 
-        if (Input.GetKeyDown(KeyCode.Space) && extraJump > 0)
+    }
+
+    public void _OnButtonMove(int input)
+    {
+        moveInput = input;
+    }
+    public void _OnStopMove()
+    {
+        moveInput = 0;
+    }
+
+    public void Jump()
+    {
+        if (extraJump > 0)
         {
             curPos = transform.position.y;
             rb.velocity = Vector2.up * jumpForce;
             extraJump--;
         }
-        else if (Input.GetKeyDown(KeyCode.Space) && extraJump == 0 && isGrounded == true)
+
+        else if (extraJump == 0 && isGrounded == true)
         {
             curPos = transform.position.y;
             rb.velocity = Vector2.up * jumpForce;
 
-
         }
+    }
+
+    public void DetectGround()
+    {
+        
+
         if (isGrounded == true)
         {
             extraJump = extraJumpValue;
@@ -95,8 +125,6 @@ public class PlayerController : MonoBehaviour
                 m_anim.SetBool("isJumping", true);
             }
         }
-
-
     }
 
     void Flip()

@@ -9,6 +9,7 @@ TagManager:
   - loot
   - Saudagar
   - NPC
+  - music
   layers:
   - Default
   - TransparentFX

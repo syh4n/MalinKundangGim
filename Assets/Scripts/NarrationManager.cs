@@ -14,9 +14,14 @@ public class NarrationManager : MonoBehaviour
     public string[] narrationText;
     public GameObject level;
     public GameObject narrationObject;
+    public MusicManager mm;
+    public UIManager uiM;
     void Start()
     {
+        mm = FindObjectOfType<MusicManager>();
+        uiM = FindObjectOfType<UIManager>();
         Refresh();
+        mm.PlayMusic(mm.cutscene);
     }
 
     // Update is called once per frame
@@ -34,6 +39,11 @@ public class NarrationManager : MonoBehaviour
         }
         else
         {
+            if (uiM != null)
+            {
+                uiM.narrationOn = false;
+                uiM.StartMusic();
+            }
             level.SetActive(true);
             narrationObject.SetActive(false);
         }

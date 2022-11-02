@@ -1672,6 +1672,7 @@ MonoBehaviour:
   itemName: Peti Harta Saudagar
   desc: Peti milik saudagar
   itemImage: {fileID: 1208130227, guid: 0f85c392610ec0c489d622a6b87a4e23, type: 3}
+  mm: {fileID: 0}
 --- !u!1 &586769266
 GameObject:
   m_ObjectHideFlags: 0
@@ -1706,6 +1707,7 @@ MonoBehaviour:
   itemName: Buah Buahan
   desc: Buah Buahan milik Saudagar
   itemImage: {fileID: 21300000, guid: a13cc953b849f3c4eb9bb5331ddb02af, type: 3}
+  mm: {fileID: 0}
 --- !u!61 &586769268
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2857,8 +2859,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1045907326}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.42, y: 0.65, z: 10}
-  m_LocalScale: {x: 0.6532284, y: 0.6532284, z: 0.6532284}
+  m_LocalPosition: {x: -0.1408, y: 0.65, z: 10}
+  m_LocalScale: {x: 0.795218, y: 0.6532284, z: 0.6532284}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2087899413}
@@ -6568,6 +6570,14 @@ PrefabInstance:
     - target: {fileID: 3849097175610222562, guid: ea1097977166ae945989a8ec959b0f83, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7005630541872084984, guid: ea1097977166ae945989a8ec959b0f83, type: 3}
+      propertyPath: narrationOn
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7080992223800672906, guid: ea1097977166ae945989a8ec959b0f83, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.56414795
       objectReference: {fileID: 0}
     - target: {fileID: 7080992224741778642, guid: ea1097977166ae945989a8ec959b0f83, type: 3}
       propertyPath: m_Name
