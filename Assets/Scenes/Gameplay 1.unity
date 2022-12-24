@@ -6563,6 +6563,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1585936296564311085, guid: ea1097977166ae945989a8ec959b0f83, type: 3}
+      propertyPath: narrativeClips.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1585936296564311085, guid: ea1097977166ae945989a8ec959b0f83, type: 3}
+      propertyPath: narrativeClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 6555efcdedc81844bb44ca1be61da301, type: 3}
+    - target: {fileID: 1585936296564311085, guid: ea1097977166ae945989a8ec959b0f83, type: 3}
+      propertyPath: narrativeClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: c4772ab5e84a68c40935dd32df0aaeab, type: 3}
     - target: {fileID: 3513960945219287048, guid: ea1097977166ae945989a8ec959b0f83, type: 3}
       propertyPath: m_IsActive
       value: 1

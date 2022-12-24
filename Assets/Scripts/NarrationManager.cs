@@ -8,6 +8,8 @@ public class NarrationManager : MonoBehaviour
     // Start is called before the first frame update
 
     int idx;
+    public AudioSource narrativeSource;
+    public AudioClip[] narrativeClips;
     public Image panelImage;
     public TextMeshProUGUI narration;
     public Sprite[] allNarration;
@@ -62,5 +64,9 @@ public class NarrationManager : MonoBehaviour
     {
         panelImage.sprite = allNarration[idx];
         narration.text = narrationText[idx];
+        narrativeSource.Stop();
+        narrativeSource.clip = narrativeClips[idx];
+        narrativeSource.Play();
+
     }
 }

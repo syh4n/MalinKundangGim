@@ -13,7 +13,7 @@ public class AnalogController : MonoBehaviour
 #if UNITY_ANDROID
        playerController = FindObjectOfType<PlayerController>(); 
 #else
-       Destroy(gameObject);
+        Destroy(gameObject);
 #endif
     }
 

@@ -536,6 +536,18 @@ PrefabInstance:
       propertyPath: m_text
       value: Tutorial - rantau
       objectReference: {fileID: 0}
+    - target: {fileID: 1585936296564311085, guid: ea1097977166ae945989a8ec959b0f83, type: 3}
+      propertyPath: narrativeClips.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1585936296564311085, guid: ea1097977166ae945989a8ec959b0f83, type: 3}
+      propertyPath: narrativeClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 6555efcdedc81844bb44ca1be61da301, type: 3}
+    - target: {fileID: 1585936296564311085, guid: ea1097977166ae945989a8ec959b0f83, type: 3}
+      propertyPath: narrativeClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: c4772ab5e84a68c40935dd32df0aaeab, type: 3}
     - target: {fileID: 3099436139450156569, guid: ea1097977166ae945989a8ec959b0f83, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 2.150879
@@ -863,6 +875,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   m_anim: {fileID: 0}
+  extraJump: 0
   extraJumpValue: 1
   isJumping: 0
 --- !u!50 &630637950
@@ -1204,6 +1217,7 @@ MonoBehaviour:
   itemName: Buah
   desc: Buah untuk ibu
   itemImage: {fileID: 1751159299, guid: 44bf06c272c5bb643b0befa574074ba3, type: 3}
+  mm: {fileID: 0}
 --- !u!1 &1015076993
 GameObject:
   m_ObjectHideFlags: 0
